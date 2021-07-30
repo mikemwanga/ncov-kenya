@@ -1,0 +1,42 @@
+# Define inputs.
+inputs:
+    # Data from South Africa between April 1, 2021 and July 30, 2021.
+  - name: south-africa
+    metadata: data/south-africa-gisaid.tar
+    sequences: data/south-africa-gisaid.tar
+    # Data from GISAID's nextregions download for Africa.
+  - name: africa
+    metadata: data/africa-gisaid.tar.gz
+    sequences: data/africa-gisaid.tar.gz
+
+# Define builds.
+builds:
+  # Define a South African build. Replace "south-africa" and "South Africa" with
+  # your country, to define a new country-specific analysis.
+  south-africa:
+    region: Africa
+    country: South Africa
+    subsampling_scheme: country-focal-contextual
+
+# Define subsampling schemes.
+subsampling:
+  country-focal-contextual:
+    focal:
+      # Select data from your country of interest.
+      query: --query "country == '{country}'"
+      max_sequences: 1500
+      group_by: year month
+    contextual:
+      # Select data from outside your country that are genetically similar to your country's data.
+      query: --query "country != '{country}'"
+      max_sequences: 500
+      group_by: year month
+      priorities:
+        focus: focal
+        type: proximity
+    global:
+      # Select data from the rest of the world without any prioritization (i.e.,
+      # a random sample) for phylogenetic context.
+      query: --query "country != '{country}'"
+      max_sequences: 100
+      group_by: year month
