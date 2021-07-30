@@ -18,6 +18,9 @@ builds:
     country: South Africa
     subsampling_scheme: country-focal-contextual
 
+# Prefix builds with repository name, to work with Nextstrain Community interface.
+auspice_json_prefix: ncov-africa
+
 # Define subsampling schemes.
 subsampling:
   country-focal-contextual:
@@ -29,7 +32,7 @@ subsampling:
     contextual:
       # Select data from outside your country that are genetically similar to your country's data.
       query: --query "country != '{country}'"
-      max_sequences: 500
+      max_sequences: 1000
       group_by: year month
       priorities:
         focus: focal
@@ -38,5 +41,5 @@ subsampling:
       # Select data from the rest of the world without any prioritization (i.e.,
       # a random sample) for phylogenetic context.
       query: --query "country != '{country}'"
-      max_sequences: 100
+      max_sequences: 200
       group_by: year month
