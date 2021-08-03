@@ -125,3 +125,5 @@ You can view trees hosted on GitHub with a URL like `https://nextstrain.org/comm
 ## Learn more
 
 [See the Nextstrain SARS-CoV-2 tutorial](http://nextstrain.github.io/ncov) for more details about the workflow and [see the Nextstrain documentation](http://docs.nextstrain.org/) for more about the tools behind the workflow.
+
+If you have questions, [let us know on the Nextstrain discussion site](https://discussion.nextstrain.org/) and we'll do our best to help.
