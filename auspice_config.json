@@ -1,8 +1,8 @@
 {
   "title": "Genomic epidemiology of novel coronavirus",
-  "build_url": "https://github.com/nextstrain/ncov",
+  "build_url": "https://github.com/blab/ncov-africa",
   "maintainers": [
-    {"name": "the Nextstrain team", "url": "https://nextstrain.org/"}
+    {"name": "Your Name Here", "url": "https://your-url-here/"}
   ],
   "data_provenance": [
     {
