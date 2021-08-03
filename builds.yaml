@@ -8,6 +8,14 @@ inputs:
   - name: africa
     metadata: data/africa-gisaid.tar.gz
     sequences: data/africa-gisaid.tar.gz
+    # References includes in the ncov workflow and required for rooting the time tree.
+  - name: references
+    metadata: data/references_metadata.tsv
+    sequences: data/references_sequences.fasta
+
+# Define files.
+files:
+  auspice_config: ../ncov-africa/auspice_config.json
 
 # Define builds.
 builds:
