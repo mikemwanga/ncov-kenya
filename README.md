@@ -3,7 +3,7 @@
 This repository includes an example configuration file for running a Nextstrain analysis of SARS-CoV-2 genomes from GISAID for a specific country (South Africa).
 To make your own country-level analysis, edit this configuration file to change the country from "South Africa" to your country of choice.
 
-[View the tree from this analysis through Nextstrain's community interface](https://nextstrain.org/community/blab/ncov-africa@main/south-africa).
+[View the tree from this analysis through Nextstrain's community interface](https://nextstrain.org/community/blab/ncov-africa@main/south-africa). You can view trees hosted on GitHub with a URL like `https://nextstrain.org/community/blab/ncov-africa@main/south-africa` where `blab` is the organization, `ncov-africa` is the repository, `main` is the branch, and `south-africa` corresponds to a file in the repository named `ncov-africa_south-africa.json`. [See the documentation for Nextstrain Community builds for more details](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html).
 
 ## Setup your environment
 
