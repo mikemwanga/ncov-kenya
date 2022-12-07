@@ -1,8 +1,8 @@
 {
   "title": "Genomic epidemiology of novel coronavirus",
-  "build_url": "https://github.com/blab/ncov-kenya",
+  "build_url": "https://github.com/mikemwanga/ncov-kenya",
   "maintainers": [
-    {"name": "Your Name Here", "url": "https://your-url-here/"}
+    {"name": "mikemwanga", "url": "https://github.com/mikemwanga/"}
   ],
   "data_provenance": [
     {
