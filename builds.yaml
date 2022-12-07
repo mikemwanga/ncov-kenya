@@ -1,13 +1,13 @@
 # Define inputs.
 inputs:
-    # Data from South Africa between April 1, 2021 and July 30, 2021.
-  - name: south-africa
-    metadata: data/south-africa-gisaid.tar
-    sequences: data/south-africa-gisaid.tar
+    # Data from South Africa between set dates
+  - name: kenya
+    metadata: data/custom.metadata.tsv
+    sequences: data/custom.sequences.fasta
     # Data from GISAID's nextregions download for Africa.
-  - name: africa
-    metadata: data/africa-gisaid.tar.gz
-    sequences: data/africa-gisaid.tar.gz
+  #- name: africa
+    #metadata: data/africa-gisaid.tar.gz
+    #sequences: data/africa-gisaid.tar.gz
     # References includes in the ncov workflow and required for rooting the time tree.
   - name: references
     metadata: data/references_metadata.tsv
@@ -15,19 +15,19 @@ inputs:
 
 # Define files.
 files:
-  auspice_config: ../ncov-africa/auspice_config.json
+  auspice_config: ./ncov-kenya/auspice_config.json
 
 # Define builds.
 builds:
   # Define a South African build. Replace "south-africa" and "South Africa" with
   # your country, to define a new country-specific analysis.
-  south-africa:
+  kenya:
     region: Africa
-    country: South Africa
+    country: Kenya
     subsampling_scheme: country-focal-contextual
 
 # Prefix builds with repository name, to work with Nextstrain Community interface.
-auspice_json_prefix: ncov-africa
+auspice_json_prefix: ncov-kenya
 
 # Define subsampling schemes.
 subsampling:
