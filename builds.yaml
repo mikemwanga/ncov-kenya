@@ -2,8 +2,8 @@
 inputs:
     # Data from South Africa between set dates
   - name: kenya
-    metadata: data/custom.metadata.tsv
-    sequences: data/custom.sequences.fasta
+    metadata: data/omicron.metadata.tsv
+    sequences: data/omicron.sequences.fasta
     # Data from GISAID's nextregions download for Africa.
   #- name: africa
     #metadata: data/africa-gisaid.tar.gz
