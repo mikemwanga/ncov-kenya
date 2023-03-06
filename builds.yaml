@@ -2,21 +2,9 @@
 inputs:
     # Data from Kenya
   - name: kenya
-    metadata: data/kenya-gisaid-data_4.tar
-    sequences: data/kenya-gisaid-data_4.tar
-  - name: kenya
-    metadata: data/kenya-gisaid-data.tar
-    sequences: data/kenya-gisaid-data.tar
-    # Data from GISAID's nextregions download for Africa.
-  - name: kenya
-    metadata: data/kenya-gisaid-data_2.tar
-    sequences: data/kenya-gisaid-data_2.tar
-  - name: kenya
-    metadata: data/kenya-gisaid-data_3.tar
-    sequences: data/kenya-gisaid-data_3.tar
-  - name: kenya
-    metadata: data/kenya-gisaid-data.tar
-    sequences: data/kenya-gisaid-data.tar
+    metadata: data/kenya_metadata_new.tsv
+    sequences: data/kenya_sequences_new.fasta
+
     # References includes in the ncov workflow and required for rooting the time tree.
   - name: references
     metadata: data/references_metadata.tsv
