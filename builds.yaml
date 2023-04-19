@@ -1,13 +1,10 @@
 # Define inputs.
 inputs:
-    # Data from South Africa between set dates
+    # Data from Kenya
   - name: kenya
-    metadata: data/omicron.metadata.tsv
-    sequences: data/omicron.sequences.fasta
-    # Data from GISAID's nextregions download for Africa.
-  #- name: africa
-    #metadata: data/africa-gisaid.tar.gz
-    #sequences: data/africa-gisaid.tar.gz
+    metadata: data/kenya_metadata_new.tsv
+    sequences: data/kenya_sequences_new.fasta
+
     # References includes in the ncov workflow and required for rooting the time tree.
   - name: references
     metadata: data/references_metadata.tsv
@@ -15,7 +12,7 @@ inputs:
 
 # Define files.
 files:
-  auspice_config: ./ncov-kenya/auspice_config.json
+  auspice_config: ncov-kenya/auspice_config.json
 
 # Define builds.
 builds:
